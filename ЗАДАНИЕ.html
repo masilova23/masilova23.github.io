@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 1</title>
+</head>
+<style>
+    body { 
+	    color: #51000c;
+		background-color:#FFB6C1;
+    }
+    h1 {
+	    color: #be0000;
+    }
+    h2 {
+	    color: #750017;
+    }
+</style>
+<body>
+  <ul>
+    <h1>Задание 1</h1>
+    <h2>Масилова Алина 23</h2>
+      <li><a href = "http://www.kubsu.ru/"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+      <li><a href = "https://www.kubsu.ru/"> Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+      <li><a href = "https://jujutsu-kaisen.fandom.com/ru/wiki/Годжо_Сатору" target="_blank"><img width ="250" src="https://i.pinimg.com/originals/75/cd/14/75cd14763af82530e52bfc6e72b33b23.jpg" alt="Годжосатору"></a></li>
+      <li><a href = "second_page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+      <li><a href = "index.html">Сокращенная ссылка на главную страницу</a></li>
+      <li><a href = "#contact" >Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href = "https://www.google.com/search?q=%D0%B2%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F&oq=%D0%B2%D0%B8%D0%BA%D0%B5%D0%BF%D0%B5&aqs=chrome">Ссылка с тремя параметрами в URL</a></li>
+      <li><a href = "https://example.com/page.html?id=123">Ссылка с параметром id в URL</a></li>
+      <li><a href="./ура.html">Относительная на страницу в текущем каталоге</a></li>
+      <li><a href="about/ура.html">Относительная на страницу в каталоге about</a></li>
+      <li><a href="../ура.html"> Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <li><a href="../../ура.html"> Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <li><a href ="https://www.nur.kz/leisure/movies/2000599-magicheskaya-bitva-personazhi-populyarnogo-anime/">Сатору Годжо</a> - сильнейший маг за всю историю человечества</li>
+      <li><a href="https://kubsu.ru/ru/sveden/common#block-block-8">Ссылка на фрагмент страницы стороннего сайта</a></li>
+      <li><img src = "https://i.pinimg.com/236x/07/42/63/0742635acb652d34be63b5772588b7e9--cute-kittens-baby-kittens.jpg" usemap = "#shape">
+          <map name = "shape" >
+              <area shape = "rect" coords = "25,25,125,125" href = "https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82" alt = "Красный квадрат" >
+              <area shape = "circle" coords = "200,75,50" href = "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt = "Зелёный круг." >
+          </map>
+      </li>
+      <li><a href = "">Ссылка с пустым href</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="https://cdn.shazoo.ru/144017_6c3DyPR6qm_141987023470231.jpg" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+      <li><a href="https://cdn.shazoo.ru/144017_6c3DyPR6qm_141987023470231.jpg" rel="nofolow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <li>
+        <ol>
+          <li><a href = "https://www.kubsu.ru/ru/university">Университет</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/education">Образование</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/science">Наука и инновации</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/studlife">Студентам</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href = "ftp://test:password@amasilov04/box/1.txt">Ссылка на файл на сервере FTP с авторизацией</a>
+      </li>
+    </ul>
+      
+      <form action="/" method="POST">      
+      <label>
+        ФИО:
+        <br>
+        <input name="field-name-1" value="введите ФИО" >
+      </label>
+      <br>
+
+      <label>
+        Телефон:<br>
+        <input name="field-tel" type="tel" placeholder="Введите ваш номер" >
+        </label><br>
+
+      <label>
+        email:<br>
+        <input name="field-email" type="email" placeholder="Введите вашу почту" >
+      </label><br>
+
+      <label>
+        Дата рождения:<br>
+        <input name="field-date" value="2004-12-26" type="date">
+      </label><br>
+
+      Пол:<br>
+
+      <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение1" >
+        Женский
+      </label>
+        <label><input type="radio" name="radio-group-1" value="Значение2" >
+        Мужской
+      </label><br >
+
+        <label>
+            Любимый язык программирования:
+            <br>
+            <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Haskel">Haskel</option>
+              <option value="Clojure">Clojure</option>
+              <option value="Prolog">Prolog</option>
+              <option value="Scala">Scala</option>
+              
+            </select>
+          </label><br>
+
+      <label>
+        Биография:<br>
+        <textarea name="field-name-2">Напишите что-нибудь</textarea>
+      </label><br>
+
+      <br>
+      <label id="contact">
+        <input type="checkbox" checked="checked" name="check-1" >
+        С контрактом ознакомлен (а):
+      </label><br>
+
+      <input type="submit" value="Сохранить">
+      </form>
+</body>
+</html>
