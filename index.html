@@ -62,32 +62,32 @@
       <label>
         ФИО:
         <br>
-        <input name="field-name-1" value="введите ФИО" >
+        <input name="field-name-1" value="введите ФИО" required >
       </label>
       <br>
 
       <label>
         Телефон:<br>
-        <input name="field-tel" type="tel" placeholder="Введите ваш номер" >
+        <input name="field-tel" type="tel" placeholder="Введите ваш номер" required >
         </label><br>
 
       <label>
         email:<br>
-        <input name="field-email" type="email" placeholder="Введите вашу почту" >
+        <input name="field-email" type="email" placeholder="Введите вашу почту" required >
       </label><br>
 
       <label>
         Дата рождения:<br>
-        <input name="field-date" value="2004-12-26" type="date">
+        <input name="field-date" value="2004-12-26" type="date" required >
       </label><br>
 
       Пол:<br>
 
       <label>
-        <input type="radio" checked="checked" name="radio-group-1" value="Значение1" >
+        <input type="radio" checked="checked" name="radio-group-1" value="Значение1" required >
         Женский
       </label>
-        <label><input type="radio" name="radio-group-1" value="Значение2" >
+        <label><input type="radio" name="radio-group-1" value="Значение2" required >
         Мужской
       </label><br >
 
@@ -108,21 +108,21 @@
               <option value="Prolog">Prolog</option>
               <option value="Scala">Scala</option>
               
-            </select>
+	    </select>
           </label><br>
 
       <label>
         Биография:<br>
-        <textarea name="field-name-2">Напишите что-нибудь</textarea>
+        <textarea name="field-name-2" required>Напишите что-нибудь</textarea >
       </label><br>
 
       <br>
       <label id="contact">
-        <input type="checkbox" checked="checked" name="check-1" >
+        <input type="checkbox" checked="checked" name="check-1" required >
         С контрактом ознакомлен (а):
       </label><br>
 
-      <input type="submit" value="Сохранить">
+      <input type="submit" value="Сохранить" >
       </form>
 </body>
 </html>
