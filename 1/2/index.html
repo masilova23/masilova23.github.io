@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Alina</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="tg">
+        <header class="navbar navbar-expand-lg ">
+            <div class="container text-center">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Логотип" width="30" height="30" class="d-inline-block align-top img-fluid">
+                </a><h1><strong>Alina</strong></h1>
+            
+            <nav class="navbar navbar-expand-lg bg-body-orange" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler active btn btn-outline-orange" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#links">Список гиперссылок</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#form">Форма</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#table">Таблица</a>
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+            </nav>
+            </div>
+            </header>
+            <div class="wrap lh-lg">
+                <ul class="list-unstyled-sm">
+                    <li id="links"><strong>Список ссылок</strong></li>
+                    <li><a href = "http://www.kubsu.ru/"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    <li><a href = "https://www.kubsu.ru/"> Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li><a href = "https://jujutsu-kaisen.fandom.com/ru/wiki/Годжо_Сатору" target="_blank"><img width ="250" src="https://i.pinimg.com/originals/75/cd/14/75cd14763af82530e52bfc6e72b33b23.jpg" alt="Годжосатору"></a></li>
+                    <li><a href="/1.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/1/2/index.html">Сокращенная ссылка на главную страницу</a></li>
+                    <li id="joke">Ссылка на фрагмент текущей страницы</li>
+                    <li><a href = "https://www.google.com/search?q=%D0%B2%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F&oq=%D0%B2%D0%B8%D0%BA%D0%B5%D0%BF%D0%B5&aqs=chrome">Ссылка с тремя параметрами в URL</a></li>
+                    <li><a href = "https://example.com/page.html?id=123">Ссылка с параметром id в URL</a></li>
+                    <li><a href="./1.html">Относительная на страницу в текущем каталоге</a></li>
+                    <li><a href="about/3.html">Относительная на страницу в каталоге about</a></li>
+                    <li><a href="../2.html"> Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../../1.html"> Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                    <li><a href ="https://www.nur.kz/leisure/movies/2000599-magicheskaya-bitva-personazhi-populyarnogo-anime/">Сатору Годжо</a> - сильнейший маг за всю историю человечества</li>
+                    <li><a href="https://kubsu.ru/ru/sveden/common#block-block-8">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li><img src = "https://i.pinimg.com/236x/07/42/63/0742635acb652d34be63b5772588b7e9--cute-kittens-baby-kittens.jpg" usemap = "#shape">
+                    <map name = "shape" >
+                        <area shape = "rect" coords = "25,25,125,125" href = "https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82" alt = "Квадрат" >
+                        <area shape = "circle" coords = "200,75,50" href = "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt = "Круг." >
+                    </map>
+                    </li>
+                    <li><a href = "">Ссылка с пустым href</a></li>
+                    <li><a>Ссылка без href</a></li>
+                    <li><a href="https://cdn.shazoo.ru/144017_6c3DyPR6qm_141987023470231.jpg" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+                    <li><a href="https://cdn.shazoo.ru/144017_6c3DyPR6qm_141987023470231.jpg" rel="nofolow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                    <li><strong>Навигация КубГУ</strong></li>
+                        <ul>
+                        <li>
+                            <a href="https://www.kubsu.ru/ru/university" title="Заглавная страница">Заглавная страница</a></li>
+                        <li>
+                            <a href="https://www.kubsu.ru/ru/education" title="Образование">Образование</a></li>
+                        <li>
+                            <a href="https://www.kubsu.ru/ru/science" title="Наука и инновации">Наука и инновации</a></li>
+                        <li>
+                            <a href="https://www.kubsu.ru/ru/abiturient" title="Абитуриентам">Абитуриентам</a></li>
+                        <li>
+                            <a href="https://www.kubsu.ru/ru/studlife" title="Студентам">Студентам</a></li>
+                        </ul>
+                    <li><a href = "ftp://test:password@amasilov04/box/1.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                </ul>
+            </div>
+            <form action="/" method="POST" id="form" class="row g-3 needs-validation" >
+                <h3 id="form">Форма</h3>
+        
+                <div class="col-auto">
+                <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
+                <input type="text" placeholder="ФИО" class="form-control rounded-pill" id="validationCustom01" value="" required=""/>
+                <div class="valid-feedback">Looks good!</div>
+                </div>
+        
+                <div class="col-auto">
+                <label for="validationCustomUsername" class="form-label">Телефон:
+                </label>
+                <div class="input-group has-validation">
+                <input type="text" class="form-control rounded-pill" placeholder="Введите ваш номер" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
+                <div class="invalid-feedback"></div>
+                </div>
+                </div>
+        
+                <div class="col-auto">
+                <label for="validationCustomUsername" class="form-label">E-mail:</label>
+                <div class="input-group has-validation">
+                <input type="text" class="form-control rounded-pill" placeholder="Введите ваш E-mail" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
+                <div class="invalid-feedback"></div>
+                </div>
+                </div>
+        
+                <div class="col-auto">
+                <label>
+                    Дата рождения:<br />
+                    <input name="field-date" class="form-control rounded-pill" placeholder="2004-07-14" type="date" required=""/></label>
+                </div>
+        
+                <div class="col-auto">
+                <p>Выберите ваш пол:<br /></p>
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" id="someRadioId1" name="someGroupName" required=""/>
+                    <label class="form-check-label" for="someRadioId1">Женский</label>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" id="someRadioId2" name="someGroupName"/>
+                    <label class="form-check-label" for="someRadioId2">Мужской</label>
+                </div>
+                </div>
+        
+                <div class="col-auto">
+                <label for="validationCustom04" class="form-label">Любимый язык программирования</label>
+                <select class="form-select rounded-pill" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Выберете</option>
+                    <option value="Значение1">Pascal</option>
+                    <option value="Значение2">C</option>
+                    <option value="Значение3">C++</option>
+                    <option value="Значение4">JavaScript</option>
+                    <option value="Значение5">PHP</option>
+                    <option value="Значение6">Python</option>
+                    <option value="Значение7">Java</option>
+                    <option value="Значение8">Haskel</option>
+                    <option value="Значение9">Clojure</option>
+                    <option value="Значение10">Prolog</option>
+                    <option value="Значение11">Scala</option>
+                </select>
+                <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-auto">
+                <label>Биография:<br />
+                    <textarea name="field-name-2" class="form-control rounded-pill" placeholder="Напишите свою биографию" required=""></textarea></label>
+                </div>
+                <div class="col-auto">
+                С контрактом:
+                <div class="form-check icheck-material-orange">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required=""/>
+                    <label class="form-check-label" for="invalidCheck">
+                    Ознакомлен (а)
+                    </label>
+                    <div class="invalid-feedback"></div>
+                </div>
+                </div>
+                <div class="col-auto">
+                <button class="btn btn-primary " type="submit">Сохранить</button>
+                </div>
+            </form>
+            <div id="table" class="container1 mt-4">
+                <h2>Таблица "Буфеты"</h2>
+                    <table  class="table table-striped-sm">
+                    
+                    <tbody>
+                        
+                        <tr>
+                        <td rowspan="2">Номер буфета</td>
+                        <td colspan="2">
+                            Наличие
+                          </td>
+                          <td rowspan="2">Продукт</td>
+                          <td rowspan="2">Цена</td>
+                        </tr>
+                        <tr>
+                          <td>Есть</td>
+                          <td>Нет</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>+</td>
+                          <td></td>
+                          <td>Хачапури</td>
+                          <td>90 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>+</td>
+                          <td></td>
+                          <td>Чай зеленый</td>
+                          <td>78 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>+</td>
+                          <td></td>
+                          <td>Сочник</td>
+                          <td>50 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>+</td>
+                          <td></td>
+                          <td>Пирожок с вишней</td>
+                          <td>43 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td></td>
+                          <td>+</td>
+                          <td>Палпи</td>
+                          <td>85 руб.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+                    <p></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
