@@ -273,6 +273,18 @@ tr:nth-child(1) {
     /* Цвет текста */
 }
 
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: space-around;
+    
+    background: #fa7474;
+    color: white;
+}
+
 @media screen and (min-width : 415px) {
     body {
         background-image: url(pink-and-yellow-plain.jpg);
@@ -555,6 +567,18 @@ tr:nth-child(1) {
         /* Цвет фона */
         color: #faf7f7;
         /* Цвет текста */
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-content: space-around;
+        
+        background: #fa7474;
+        color: white;
     }
     
 }
