@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -35,6 +39,7 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="#table">Таблица</a>
                     </li>
+                    <button id="openFormButton" class="btn">Открыть форму</button>
                     
                 </ul>
                 </div>
@@ -224,6 +229,131 @@
                   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
                     <p></p>
     </div>
+    <div class="container2 text-center">
+        <div class="row">
+          <p>Зоомагазин</p>
+          <div class="col" >
+            <p>Выберите котика: </p>
+            <select class="why" name="product-choice"  onclick="change()">
+              <option value="1">Без породы</option>
+              <option value="2">Породистый</option>
+              <option value="3">Породистый для выставок</option>
+            </select>
+          </div>
+          <p></p>
+          <br />
+          <div id="option-choices" ></div>
+          <div class="col">
+            <p>
+              Введите количество котиков
+              <input
+                id="amount-of-products"
+                type="number"
+                min="1"
+                max="5"
+                value="1"
+              />
+            </p>
+          </div>
+          <div class="col">
+            <br />
+            <input type="button"  class="knopka" value="Рассчитать сумму покупки" onclick="getSum()" />
+            <div id="result"></div>
+            <script src="main.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="slider lazy" id="carouselExampleIndicators">
+    
+        <div>
+          <div class="image">
+            <img src="6.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="2.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="4.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="5.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="3.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="8.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="7.jpg" />
+          </div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="1.jpg" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <div class="wrap8 text-center" >
+      <div id="popupForm" class="popup">
+        <form id="feedbackForm" class="feedback-form" method="POST"
+        action="https://api.slapform.com/4yFFATQTl" >
+          <h5><strong><em>Форма обратной связи</em></strong></h5>
+          <div class="form-group">
+            <label for="fullName">ФИО:</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="organization">Организация:</label>
+            <input type="text" id="organization" name="organization">
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Я согласен(-на) с политикой обработки персональных данных</label>
+          </div>
+          <div class="form-group">
+            <button class="loky" type="submit" value="Отправить">Отправить</button>
+          </div>
+          <div class="form-group">
+          <button class="lok" onclick="closePopup()">Назад</button></div>      
+        </form>
+      </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
     <footer>
         <div class="container text-center">
         <div class="footer-bg-sm"><p>© Масилова Алина</p></div></div>
